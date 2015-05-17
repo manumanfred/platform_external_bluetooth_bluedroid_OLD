@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 ifeq ($(BOARD_USES_ALSA_AUDIO),true)
-ifeq ($(TARGET_QCOM_AUDIO_VARIANT),caf)
+ifeq ($(BETTER_AUDIO_WITH_SAMPLE_RATE_48K),true)
 	LOCAL_CFLAGS += -DSAMPLE_RATE_48K
 endif
 endif
